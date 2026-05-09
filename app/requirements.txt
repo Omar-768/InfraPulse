@@ -1,0 +1,6 @@
+fastapi
+uvicorn
+psutilfastapi
+uvicorn
+psutil
+boto3

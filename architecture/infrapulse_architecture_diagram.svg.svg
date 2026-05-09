@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="900" viewBox="0 0 1400 900">
+  <defs>
+    <style>
+      .title { font: 700 30px Arial, sans-serif; fill: #111; }
+      .subtitle { font: 600 18px Arial, sans-serif; fill: #222; }
+      .text { font: 16px Arial, sans-serif; fill: #222; }
+      .small { font: 14px Arial, sans-serif; fill: #333; }
+      .box { fill: #f7f7f7; stroke: #333; stroke-width: 2; rx: 12; ry: 12; }
+      .cloud { fill: #fbfbfb; stroke: #333; stroke-width: 2; rx: 24; ry: 24; }
+      .accent { fill: #eef4ff; stroke: #333; stroke-width: 2; rx: 12; ry: 12; }
+      .accent2 { fill: #eefaf2; stroke: #333; stroke-width: 2; rx: 12; ry: 12; }
+      .accent3 { fill: #fff8ea; stroke: #333; stroke-width: 2; rx: 12; ry: 12; }
+      .arrow { stroke: #333; stroke-width: 2.5; fill: none; marker-end: url(#arrowhead); }
+      .dashed { stroke-dasharray: 7 6; }
+    </style>
+    <marker id="arrowhead" markerWidth="12" markerHeight="8" refX="10" refY="4" orient="auto">
+      <polygon points="0 0, 12 4, 0 8" fill="#333"/>
+    </marker>
+  </defs>
+
+  <text x="700" y="48" text-anchor="middle" class="title">InfraPulse Architecture</text>
+  <text x="700" y="80" text-anchor="middle" class="small">AWS + Terraform + FastAPI + Linux + systemd + S3 report automation</text>
+
+  <rect x="60" y="180" width="250" height="280" class="box"/>
+  <text x="185" y="220" text-anchor="middle" class="subtitle">Local Machine</text>
+  <rect x="95" y="250" width="180" height="42" class="accent"/><text x="185" y="277" text-anchor="middle" class="text">VS Code</text>
+  <rect x="95" y="305" width="180" height="42" class="accent"/><text x="185" y="332" text-anchor="middle" class="text">Git</text>
+  <rect x="95" y="360" width="180" height="42" class="accent"/><text x="185" y="387" text-anchor="middle" class="text">Terraform</text>
+  <rect x="95" y="415" width="180" height="42" class="accent"/><text x="185" y="442" text-anchor="middle" class="text">AWS CLI</text>
+
+  <rect x="390" y="120" width="930" height="680" class="cloud"/>
+  <text x="855" y="160" text-anchor="middle" class="subtitle">AWS Cloud</text>
+
+  <rect x="470" y="220" width="610" height="460" class="box"/>
+  <text x="775" y="255" text-anchor="middle" class="subtitle">VPC</text>
+
+  <rect x="530" y="300" width="430" height="300" class="accent2"/>
+  <text x="745" y="332" text-anchor="middle" class="subtitle">Public Subnet</text>
+
+  <rect x="610" y="380" width="270" height="165" class="accent3"/>
+  <text x="745" y="410" text-anchor="middle" class="subtitle">EC2 Ubuntu Instance</text>
+  <text x="745" y="445" text-anchor="middle" class="text">Nginx</text>
+  <text x="745" y="475" text-anchor="middle" class="text">FastAPI + Uvicorn</text>
+  <text x="745" y="505" text-anchor="middle" class="text">systemd service</text>
+  <text x="745" y="535" text-anchor="middle" class="text">reports/ folder</text>
+
+  <rect x="1110" y="250" width="170" height="140" class="accent"/>
+  <text x="1195" y="282" text-anchor="middle" class="subtitle">Security Group</text>
+  <text x="1195" y="315" text-anchor="middle" class="small">TCP 22 → /32</text>
+  <text x="1195" y="342" text-anchor="middle" class="small">TCP 80 → 0.0.0.0/0</text>
+  <text x="1195" y="369" text-anchor="middle" class="small">TCP 8000 → 0.0.0.0/0</text>
+
+  <rect x="1110" y="435" width="170" height="70" class="box"/>
+  <text x="1195" y="478" text-anchor="middle" class="text">Internet Gateway</text>
+
+  <rect x="1110" y="530" width="170" height="88" class="box"/>
+  <text x="1195" y="565" text-anchor="middle" class="subtitle">Route Table</text>
+  <text x="1195" y="595" text-anchor="middle" class="small">0.0.0.0/0 → IGW</text>
+
+  <rect x="1110" y="645" width="170" height="95" class="accent2"/>
+  <text x="1195" y="678" text-anchor="middle" class="subtitle">IAM Role +</text>
+  <text x="1195" y="705" text-anchor="middle" class="subtitle">Instance Profile</text>
+  <text x="1195" y="730" text-anchor="middle" class="small">S3 Put/Get access</text>
+
+  <rect x="1180" y="95" width="110" height="95" class="accent3"/>
+  <text x="1235" y="130" text-anchor="middle" class="subtitle">S3</text>
+  <text x="1235" y="158" text-anchor="middle" class="small">reports/</text>
+
+  <rect x="500" y="715" width="520" height="60" class="box"/>
+  <text x="760" y="742" text-anchor="middle" class="subtitle">Endpoints</text>
+  <text x="760" y="765" text-anchor="middle" class="small">/health   /system   /network-check   /report   /docs</text>
+
+  <line x1="310" y1="320" x2="470" y2="320" class="arrow"/>
+  <text x="390" y="305" text-anchor="middle" class="small">terraform apply</text>
+
+  <line x1="960" y1="450" x2="1110" y2="320" class="arrow"/>
+  <line x1="960" y1="470" x2="1110" y2="470" class="arrow"/>
+  <line x1="960" y1="490" x2="1110" y2="575" class="arrow"/>
+
+  <line x1="880" y1="450" x2="1110" y2="685" class="arrow"/>
+  <text x="1000" y="610" text-anchor="middle" class="small">secure S3 upload auth</text>
+
+  <line x1="880" y1="420" x2="1180" y2="165" class="arrow"/>
+  <text x="1020" y="250" text-anchor="middle" class="small">/report uploads JSON</text>
+
+  <line x1="1240" y1="390" x2="1240" y2="430" class="arrow dashed"/>
+  <line x1="1240" y1="505" x2="1240" y2="528" class="arrow dashed"/>
+  <text x="185" y="500" text-anchor="middle" class="small">Local control plane</text>
+  <text x="745" y="575" text-anchor="middle" class="small">Automatic bootstrap via user_data.sh</text>
+</svg>
