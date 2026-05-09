@@ -80,6 +80,8 @@ InfraPulse is a lightweight cloud operations platform built around a single AWS-
 
 
 
+
+
 \## Infrastructure Evidence
 
 
