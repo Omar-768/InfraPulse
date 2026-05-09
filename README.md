@@ -31,9 +31,9 @@ InfraPulse uses:
 
 ## Architecture Diagram
 
-![InfraPulse Architecture](architecture/infrapulse_architecture_diagram.svg)
+![InfraPulse Architecture](architecture/infrapulse_architecture_diagram.png)
 
-For more detail, see [docs/architecture.md](docs/architecture.md).
+[Open architecture diagram file](architecture/infrapulse_architecture_diagram.png)
 
 ## Key Features
 - Automated AWS provisioning with Terraform

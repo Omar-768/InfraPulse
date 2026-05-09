@@ -76,7 +76,11 @@ InfraPulse is a lightweight cloud operations platform built around a single AWS-
 
 
 
-!\[InfraPulse Architecture](../architecture/infrapulse\_architecture\_diagram.svg)
+!\[InfraPulse Architecture](../architecture/infrapulse\_architecture\_diagram.png)
+
+
+
+\[Open architecture diagram file](../architecture/infrapulse\_architecture\_diagram.png)
 
 
 
