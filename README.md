@@ -31,10 +31,9 @@ InfraPulse uses:
 
 ## Architecture Diagram
 
-![InfraPulse Architecture](architecture/infrapulse_architecture_diagram.png)
+[![InfraPulse Architecture](https://raw.githubusercontent.com/Omar-768/InfraPulse/main/architecture/infrapulse_architecture_diagram.png)](https://raw.githubusercontent.com/Omar-768/InfraPulse/main/architecture/infrapulse_architecture_diagram.png)
 
-[Open architecture diagram file](architecture/infrapulse_architecture_diagram.png)
-
+[Open architecture diagram file](https://raw.githubusercontent.com/Omar-768/InfraPulse/main/architecture/infrapulse_architecture_diagram.png)
 ## Key Features
 - Automated AWS provisioning with Terraform
 - EC2 bootstrap using `user_data.sh`

@@ -70,19 +70,15 @@ InfraPulse is a lightweight cloud operations platform built around a single AWS-
 
 \- Application dependencies are installed in a Python virtual environment
 
-
-
 \## Visual Diagram
 
 
 
-!\[InfraPulse Architecture](../architecture/infrapulse\_architecture\_diagram.png)
+\[!\[InfraPulse Architecture](https://raw.githubusercontent.com/Omar-768/InfraPulse/main/architecture/infrapulse\_architecture\_diagram.png)](https://raw.githubusercontent.com/Omar-768/InfraPulse/main/architecture/infrapulse\_architecture\_diagram.png)
 
 
 
-\[Open architecture diagram file](../architecture/infrapulse\_architecture\_diagram.png)
-
-
+\[Open architecture diagram file](https://raw.githubusercontent.com/Omar-768/InfraPulse/main/architecture/infrapulse\_architecture\_diagram.png)
 
 \## Infrastructure Evidence
 
